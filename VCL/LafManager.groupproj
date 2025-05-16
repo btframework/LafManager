@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{948B5123-ED1D-4F64-96F9-D919E5200FF9}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Delphi\LafManagerDelphi.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="CBuilder\LafManagerCBuilder.cbproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="LafManagerDelphi">
+        <MSBuild Projects="Delphi\LafManagerDelphi.dproj"/>
+    </Target>
+    <Target Name="LafManagerDelphi:Clean">
+        <MSBuild Projects="Delphi\LafManagerDelphi.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="LafManagerDelphi:Make">
+        <MSBuild Projects="Delphi\LafManagerDelphi.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="LafManagerCBuilder">
+        <MSBuild Projects="CBuilder\LafManagerCBuilder.cbproj"/>
+    </Target>
+    <Target Name="LafManagerCBuilder:Clean">
+        <MSBuild Projects="CBuilder\LafManagerCBuilder.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="LafManagerCBuilder:Make">
+        <MSBuild Projects="CBuilder\LafManagerCBuilder.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="LafManagerDelphi;LafManagerCBuilder"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="LafManagerDelphi:Clean;LafManagerCBuilder:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="LafManagerDelphi:Make;LafManagerCBuilder:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

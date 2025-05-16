@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.679,=C:\Users\Mike\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.116,C:\Users\Mike\Documents\Embarcadero\Studio\Projects\Unit1.cpp=D:\Projects\Shared Projects\Windows\LafManager\VCL\CBuilder\main.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.116,C:\Users\Mike\Documents\Embarcadero\Studio\Projects\Unit1.h=D:\Projects\Shared Projects\Windows\LafManager\VCL\CBuilder\main.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.738,C:\Users\Mike\Documents\Embarcadero\Studio\Projects\Project1.cbproj=D:\Projects\Shared Projects\Windows\LafManager\VCL\CBuilder\LafManagerCBuilder.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.116,C:\Users\Mike\Documents\Embarcadero\Studio\Projects\Unit1.dfm=D:\Projects\Shared Projects\Windows\LafManager\VCL\CBuilder\main.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.489,=C:\Users\Mike\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.407,C:\Users\Mike\Documents\Embarcadero\Studio\Projects\Project1PCH1.h=D:\Projects\Shared Projects\Windows\LafManager\VCL\CBuilder\LafManagerPCH.h</Transaction>
+  </Transactions>
+</BorlandProject>
